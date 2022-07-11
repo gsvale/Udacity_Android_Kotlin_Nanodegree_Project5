@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Political Preparedness</string>
+
+    <!-- Add necessary string values -->
+    <string name="ballot_logo">Ballot Logo</string>
+    <string name="upcoming_elections">Upcoming Elections</string>
+    <string name="find_my_representatives">Find My Representatives</string>
+    <string name="representative_search">Representative Search</string>
+    <string name="representative_photo">Representative Photo</string>
+    <string name="www_icon">WWW icon</string>
+    <string name="facebook_icon">Facebook icon</string>
+    <string name="twitter_icon">Twitter icon</string>
+    <string name="use_my_location">Use My Location</string>
+    <string name="my_representatives">My Representatives</string>
+    <string name="address_line_1">Address Line 1</string>
+    <string name="address_line_2">Address Line 2</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+    <string name="permission_denied_explanation">You need to grant location permission in order to select the location.</string>
+    <string name="location_required_error">Location services must be enabled to use the app</string>
+    <string name="settings">Settings</string>
+    <string name="no_items">No Items!</string>
+    <string name="saved_elections">Saved Elections</string>
+    <string name="follow_election">FOLLOW ELECTION</string>
+    <string name="unfollow_election">UNFOLLOW ELECTION</string>
+    <string name="election_information">Election Information</string>
+    <string name="voting_locations">Voting Locations</string>
+    <string name="ballot_information">Ballot Information</string>
+    <string name="correspondence_address">Correspondence Address</string>
+
+</resources>
