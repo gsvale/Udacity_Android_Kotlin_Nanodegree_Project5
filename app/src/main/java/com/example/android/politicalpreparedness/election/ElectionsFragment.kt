@@ -37,6 +37,7 @@ class ElectionsFragment : Fragment() {
         binding = FragmentElectionBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
+        binding.executePendingBindings()
 
         // Link elections to voter info
 

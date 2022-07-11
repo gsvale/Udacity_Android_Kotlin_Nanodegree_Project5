@@ -55,6 +55,7 @@ class DetailFragment : Fragment() {
         binding = FragmentRepresentativeBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
+        binding.executePendingBindings()
 
         // onItemSelectedListener for State Spinner
         binding.state.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -94,6 +95,12 @@ class DetailFragment : Fragment() {
             }
         })
 
+        if(savedInstanceState?.getInt("motionLayout") != null) {
+            binding.motionContainer
+                .transitionToState(savedInstanceState
+                    .getInt("motionLayout"))
+        }
+
         // Establish button listeners for field and location search
         binding.buttonSearch.setOnClickListener {
             hideKeyboard()
@@ -108,7 +115,14 @@ class DetailFragment : Fragment() {
             }
         }
 
+
         return binding.root
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("motionLayout", binding.motionContainer
+            .currentState)
     }
 
 

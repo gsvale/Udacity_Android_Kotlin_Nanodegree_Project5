@@ -59,6 +59,7 @@ class VoterInfoFragment : Fragment() {
         binding = FragmentVoterInfoBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
+        binding.executePendingBindings()
 
 
         // Populate voter info -- hide views without provided data.
